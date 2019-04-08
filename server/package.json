@@ -1,0 +1,11 @@
+{
+  "name": "echo-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "echo-server.js",
+  "scripts": {
+    "start": "node echo-server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Form</title>
+  <style>
+    label {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<h1>First Form</h1>
+<form action="http://localhost:5001/submit" method="post">
+  <label for="firstname"><span>First Name</span>
+    <input id="firstname" name="firstname"
+           type="text" placeholder="First Name">
+  </label>
+
+  <label for="age"><span>Age</span>
+    <input id="age" name="age" type="range"
+           min="0" max="100" step="10" value="30"
+           oninput="ageOutput.value=age.value"> <!-- frowned upon-->
+    <output id="ageOutput" for="age">30</output>
+  </label>
+
+  <label for="f-color"><span>Your favorite Color is:</span>
+    <select id="f-color" name="f-color">
+      <option>blue</option>
+      <option>red</option>
+    </select>
+  </label>
+  <button name="btn" value="bntVal">Send Data</button>
+</form>
+</body>
+</html>

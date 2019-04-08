@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Sample</title>
+</head>
+<body>
+<ul role="menu">
+    <li><a href="/home">Home</a></li>
+    <li><a href="/news">News</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/about">About</a></li>
+</ul>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+ul[role='menu'] {
+    list-style-type: none;
+    background-color: darkgray;
+    display: inline-block;
+    /*list-style-image: url("imgs/Coa_stgallen.small.svg.png");*/
+}
+ul[role='menu'] > li {
+    display: inline-block;
+    padding: 16px;
+}
+ul[role='menu'] > li > a {
+    color: inherit;
+    text-decoration: none;
+}
+ul[role='menu'] > li > a:hover {
+    color: white;
+}
+</style>
+</body>
+</html>
