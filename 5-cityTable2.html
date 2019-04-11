@@ -2,51 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Table Demo 3: Städte Tabelle 3</title>
+  <title>Table Demo 3: Städte Tabelle 3 / Folie "Styling"</title>
   <style>
     /* Demo1: Headings einfärben */
     table thead {
-      background-color: lightcyan;
-      font-weight: bold;
     }
 
-    /* Demo2: Pro Reihe einen Border */
+    /*
+      background-color: lightcyan;
+      font-weight: bold;
+    */
 
+
+    /* Demo2: Pro Reihe einen Border */
     table {
-      border-collapse: collapse;
-      caption-side: bottom;
+      /* border-collapse */
+      caption-side: top;
+    }
+
+    table tr {
     }
 
     /* Demo3: Image zentrieren */
-    img {
-      width: 40px;
-      display: block;
-      margin: 0 auto;
+    table img {
     }
 
     /* Demo4: Caption bottom */
 
-    /* Demo5: Text zentrieren */
-    /* {
-      width: 6em;
-      text-align: center;
-    }*/
-
-    table tr {
-      border: 1px solid blue;
-    }
-
-    table td:nth-child(5) {
-      text-align: center;
-    }
-
-    table tr:nth-child(2n), table th {
-      background-color: aqua;
+    /* Demo5: Kantonskürzel zentrieren (nth-3) */
+    table {
     }
 
     /* Demo6: Jede zweite Zeile einfärben */
     table {
-      /*background-color: aqua;*/
     }
   </style>
 </head>
@@ -56,7 +44,15 @@
 <table>
   <caption>Wichtige Städte in der Ostschweiz</caption>
   <thead>
-    <tr><th scope="col">Stadt</th><th scope="col">Wappen</th><th scope="col">Kanton</th><th scope="col">PLZ</th><th scope="col">Einwohner</th><th scope="col">Fläche</th><th scope="col">Höhe</th></tr>
+    <tr>
+      <th scope="col">Stadt</th>
+      <th scope="col">Wappen</th>
+      <th scope="col">Kanton</th>
+      <th scope="col">PLZ</th>
+      <th scope="col">Einwohner</th>
+      <th scope="col">Fläche</th>
+      <th scope="col">Höhe</th>
+    </tr>
   </thead>
   <tbody>
     <tr><th scope="row">Buchs</th><td><img src="imgs/240px-Gemeinde_Buchs-coat_of_arms.svg.png" alt="Wappen Buchs"></td><td>SG</td><td>9470</td><td>12531</td><td>15.95km2</td><td>448müM</td></tr>

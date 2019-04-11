@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Table Demo 2: Städte Tabelle 2</title>
+  <title>Table Demo 2: Städte Tabelle 2 / Folie "Attributes"</title>
   <style>
   </style>
 </head>
 <body>
 <h1>Table Demo 2: Städte Tabelle 2</h1>
 
+<!-- Demo1: colspan einfügen <tfoot> -->
+
 <table>
   <caption>Wichtige Städte in der Ostschweiz</caption>
   <thead>
-    <tr><th scope="col">Stadt</th><th scope="col">Wappen</th><th scope="col">Kanton</th><th scope="col">PLZ</th><th scope="col">Einwohner</th><th scope="col">Fläche</th><th scope="col">Höhe</th></tr>
+    <tr>
+      <th scope="col">Stadt</th>
+      <th scope="col">Wappen</th>
+      <th scope="col">Kanton</th>
+      <th scope="col">PLZ</th>
+      <th scope="col">Einwohner</th>
+      <th scope="col">Fläche</th>
+      <th scope="col">Höhe</th>
+    </tr>
   </thead>
   <tbody>
     <tr><th scope="row">Buchs</th><td><img src="imgs/240px-Gemeinde_Buchs-coat_of_arms.svg.png" alt="Wappen Buchs"></td><td>SG</td><td>9470</td><td>12531</td><td>15.95km2</td><td>448müM</td></tr>
@@ -21,9 +31,9 @@
     <tr><th scope="row">St. Gallen</th><td><img src="imgs/Coa_stgallen.svg.png" alt="Wappen St. Gallen"></td><td>SG</td><td>9000-9029</td><td>75481</td><td>39.41km2</td><td>674müM</td></tr>
     <tr><th scope="row">Wil, SG</th><td><img src="imgs/240px-Wappen_Stadt_Wil_SG.svg.png" alt="Wappen Wil, SG"></td><td>SG</td><td>9500</td><td>23751</td><td>20.7km2</td><td>571müM</td></tr>
     <tr><th scope="row">Winterthur</th><td><img src="imgs/240px-Wappen_Winterthur.svg.png" alt="Wappen Winterthur"></td><td>ZH</td><td>8400-8411</td><td>109775</td><td>68.05km2</td><td>439müM</td></tr>
-    <tr><th scope="row">Zürich</th><td><img src="imgs/Wappen_Zürich_matt.svg.png" alt="Wappen Zürich"></td><td>ZH</td><td>8000-8099</td><td>402762</td><td>91.88km2</td><td>408müM</td></tr>
+    <tr><th scope="row">Zürich</th><td><img src="imgs/Wappen_Zuerich_matt.svg.png" alt="Wappen Zürich"></td><td>ZH</td><td>8000-8099</td><td>402762</td><td>91.88km2</td><td>408müM</td></tr>
   </tbody>
-  <tfoot><tr><td colspan="7">Data taken from Wikipedia</td></tr></tfoot>
+  <tfoot><tr><td>Data taken from Wikipedia</td></tr></tfoot>
 </table>
 
 </body>
